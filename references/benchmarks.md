@@ -1,6 +1,21 @@
-# TikTok Ads Benchmarks 
+# TikTok Ads Benchmarks
 
-# Benchmarks - CPC
+## Region Definitions
+
+| Region | Countries / Markets |
+|--------|-------------------|
+| APAC | Asia-Pacific — Japan, South Korea, Southeast Asia, Australia, New Zealand, India |
+| CN | China |
+| EEU | Eastern Europe — Poland, Czech Republic, Hungary, Romania, Ukraine, Russia |
+| LATAM | Latin America — Mexico, Brazil, Argentina, Colombia, Chile, Peru |
+| METAP | Middle East, Turkey, Africa, and Pakistan |
+| NA | North America — United States and Canada |
+| WEU | Western Europe — UK, France, Germany, Spain, Italy, Netherlands |
+| Others | All other regions not covered above |
+
+---
+
+## Benchmarks - CPC
 | Advertiser Region | Campaign Objective | CPC 25th Percentile | CPC 50th Percentile | CPC 75th Percentile |
 |---|---|---|---|---|
 | APAC | App promotion | 0.031 | 0.007 | 0.003 |
@@ -64,7 +79,7 @@
 
 
 
-# Benchmarks - CTR 
+## Benchmarks - CTR
 | Advertiser Region | Campaign Objective | CTR 25th Percentile | CTR 50th Percentile | CTR 75th Percentile |
 |---|---|---|---|---|
 | APAC | App promotion | 0.035 | 0.099 | 0.392 |
@@ -127,7 +142,7 @@
 
 
 
-# Benchmarks - CPA
+## Benchmarks - CPA
 
 | Advertiser Region | Campaign Objective | Optimize Goal | CPA 25th Percentile | CPA 50th Percentile | CPA 75th Percentile |
 |---|---|---|---|---|---|
