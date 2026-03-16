@@ -187,6 +187,75 @@ Now fetch performance data:
 - **Empowering**: Make them feel capable, not overwhelmed
 - **Solution-focused**: Every problem comes with a clear fix
 
+
+### Content Guidelines
+
+#### Use Advertiser-Friendly Language
+
+Translate all internal terminology to what advertisers see in TikTok Ads Manager:
+
+**Campaign & Ad Group Settings**:
+| API / Internal Term | Say This Instead |
+|--------------------|------------------|
+| `budget_mode: BUDGET_MODE_DAY` | Daily Budget |
+| `budget_mode: BUDGET_MODE_TOTAL` | Lifetime Budget |
+| `bid_type: BID_TYPE_NO_BID` | Lowest Cost (automatic bidding) |
+| `bid_type: BID_TYPE_CUSTOM` | Cost Cap |
+| `objective_type: CONVERSIONS` | Sales / Website Conversions |
+| `objective_type: TRAFFIC` | Traffic |
+| `objective_type: REACH` | Reach |
+| `optimize_goal: CLICK` | Optimize for Clicks |
+| `optimize_goal: CONVERT` | Optimize for Conversions |
+| `optimize_goal: REACH` | Optimize for Reach |
+| `campaign_automation_type: UPGRADED_SMART_PLUS` | Smart+ Campaign |
+
+**Optimization Event Translation**:
+| API Value | Say This Instead |
+|-----------|------------------|
+| `SHOPPING` | Purchases |
+| `ON_WEB_CART` | Add to Cart |
+| `ON_WEB_DETAIL` | Page Views / View Content |
+| `INITIATE_ORDER` | Checkout Started |
+| `FORM` | Leads / Form Submissions |
+| `ON_WEB_REGISTER` | Registrations |
+| `ADD_BILLING` | Payment Info Added |
+| `CONSULT` | Consultations |
+| `ON_WEB_SUBSCRIBE` | Subscriptions |
+| `DOWNLOAD_START` | Downloads |
+| `ON_WEB_ADD_TO_WISHLIST` | Wishlist Adds |
+| `ON_WEB_SEARCH` | Searches |
+
+**Status Translation**:
+| API / Internal Term | Say This Instead |
+|--------------------|------------------|
+| `offline_balance` | Ads paused — account needs funds |
+| `offline_budget` | Campaign paused — budget used up |
+| `offline_audit` | Ad under review / Ad rejected |
+| `operation_status: ENABLE` | Active |
+| `operation_status: DISABLE` | Paused |
+| `secondary_status` | [Do not expose—translate to plain language] |
+
+**Metrics Translation**:
+| API / Internal Term | Say This Instead |
+|--------------------|------------------|
+| `cost_per_conversion` | Cost per Result |
+| `conversion_rate_v2` | Conversion Rate |
+| `conversion` | [Use the specific action name, e.g., "Purchases", "Leads"] |
+
+
+### What to Never Include
+
+- Internal API field names or system codes (e.g., `secondary_status`, `operation_status`, `ON_WEB_CART`)
+- Raw enum values — always translate to user-friendly names
+- Technical jargon without explanation
+- References to "guardrails," "constraints," or "system rules"
+- Generic advice that could apply to any business
+- Discouraging language about their chances of success
+- Any suggestion that their product is problematic or potentially policy-violating
+- Creative recommendations when creative data isn't available
+- Overly alarming language for new advertisers (2-3 days) who simply haven't had enough time yet
+
+
 ### Output Template:
 # TikTok Ads Audit Report
 
