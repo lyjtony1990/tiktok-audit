@@ -12,7 +12,7 @@
 | `ADD_BILLING` | Add Payment Info | Mid-Deep | Subscription/checkout |
 | `ON_WEB_REGISTER` | Complete Registration | Conversion | Account creation |
 | `ON_WEB_SUBSCRIBE` | Subscribe | Conversion | Newsletter, membership |
-| `FORM` | Lead | 🔴 Conversion | Lead generation |
+| `FORM` | Lead | Conversion | Lead generation |
 | `CONSULT` | Consultation | Conversion | Service businesses |
 | `DOWNLOAD_START` | Download | Conversion | Apps, digital products |
 | `SHOPPING` | Purchase | Deep | E-commerce sales |
