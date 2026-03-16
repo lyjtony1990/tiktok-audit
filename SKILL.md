@@ -148,12 +148,13 @@ Now fetch performance data:
 
 
 #### Campaign level performance analysis
- - Map campaign level performance metrics to how well they compare to benchmarks:
-  | Metric | >75th percentile | 50th-75th percentile | 25-50th percentile | < 25th percentile |
-  |---|---|---|---|---|
-  | CTR | Amazing | Good | Fair | Poor |
-  | CPC | Poor | Fair | Good | Amazing |
-  | CPA | Poor | Fair | Good | Amazing |
+- Map campaign level performance metrics to how well they compare to benchmarks:
+
+| Metric | >75th percentile | 50th-75th percentile | 25-50th percentile | < 25th percentile |
+|---|---|---|---|---|
+| CTR | Amazing | Good | Fair | Poor |
+| CPC | Poor | Fair | Good | Amazing |
+| CPA | Poor | Fair | Good | Amazing |
 - A campaign is in the learning phase if it was created within the last 7 days **or** has fewer than 25 conversions. In this phase, do not evaluate performance against benchmarks — instead note that the campaign is still learning.
 
 #### Campaign optimizations 
