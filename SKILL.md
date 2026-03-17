@@ -169,7 +169,7 @@ Now fetch performance data:
 
 
 ## Output instruction:
-**Report Structure**:
+
 
 ### Instructions
 - Start with an executive summary summarizing account optimization level. Highlight what's working well, and areas for improvement.
@@ -247,37 +247,34 @@ Translate all internal terminology to what advertisers see in TikTok Ads Manager
 - Raw enum values — always translate to user-friendly names
 - Technical jargon without explanation
 - References to "guardrails," "constraints," or "system rules"
-- Generic advice that could apply to any business
 - Discouraging language about their chances of success
 - Any suggestion that their product is problematic or potentially policy-violating
-- Creative recommendations when creative data isn't available
-- Overly alarming language for new advertisers (2-3 days) who simply haven't had enough time yet
-
+- Actual benchmark data - always just use the range given in /references/benchmark.md
 
 ### Output Template:
-# TikTok Ads Audit Report
+## TikTok Ads Audit Report
 
 **Account ID:** {{ADVERTISER_ID}}  
 **Report Date:** {{TODAYS_DATE_IN_ADVERTISER_TIMEZONE}}  
 
 ---
 
-## 1. Executive Summary
+### 1. Executive Summary
 
-### Overall Health: {{HEALTH_RATING — use one of: 🟢 Strong / 🟡 Needs Attention / 🔴 Needs Overhaul}}
+#### Overall Health: {{HEALTH_RATING — use one of: 🟢 Strong / 🟡 Needs Attention / 🔴 Needs Overhaul}}
 
 {{2-4 sentence high-level summary. State what the advertiser is doing well, what needs fixing, and the single highest-impact recommendation.}}
 
-### What's Working Well
+#### What's Working Well
 {{Bullet list of 2-4 strengths. Each bullet should name a specific thing and briefly explain why it matters.}}
 
-### Top Issues to Fix
+#### Top Issues to Fix
 {{Bullet list of 2-4 critical problems. Each bullet should name the issue, explain the impact, and reference the section where the fix is detailed.}}
 
 ---
 
 
-## 2. Business Context
+### 2. Business Context
 
 > Skip this section entirely if no landing page URL was accessible.
 
@@ -292,9 +289,9 @@ Translate all internal terminology to what advertisers see in TikTok Ads Manager
 
 ---
 
-## 3. Account-Level Audit
+### 3. Account-Level Audit
 
-### 3.1 Account Setup
+#### 3.1 Account Setup
 
 | Check | Status | Notes |
 |-------|--------|-------|
@@ -303,7 +300,7 @@ Translate all internal terminology to what advertisers see in TikTok Ads Manager
 | Conversion events configured | {{✅ or ⚠️ or ❌}} | {{List events detected, or note if missing}} |
 | At least 1 Smart+ campaign | {{✅ or ❌}} | {{Name of Smart+ campaign, or recommendation to create one}} |
 
-### 3.2 Campaign Structure Overview
+#### 3.2 Campaign Structure Overview
 
 > Funnel Stage mapping: Reach / Video Views = Upper; Traffic / Community Interaction = Mid; Website Conversions / App Promotion / Lead Generation = Lower.
 
@@ -313,7 +310,7 @@ Translate all internal terminology to what advertisers see in TikTok Ads Manager
 | 2 | {{CAMPAIGN_NAME}} | {{OBJECTIVE}} | {{STATUS}} | {{Upper / Mid / Lower}} | {{COUNT}} | {{COUNT}} |
 {{...repeat for each campaign}}
 
-### 3.3 Structure Best Practices
+#### 3.3 Structure Best Practices
 
 | Check | Status | Details |
 |-------|--------|---------|
@@ -324,26 +321,24 @@ Translate all internal terminology to what advertisers see in TikTok Ads Manager
 
 
 
-## 4. Campaign Deep Dives
+### 4. Campaign Deep Dives
 
 > Repeat this entire section for each active campaign.
 
-### 4.{{N}} Campaign: "{{CAMPAIGN_NAME}}"
+#### 4.{{N}} Campaign: "{{CAMPAIGN_NAME}}"
 
 **Objective:** {{OBJECTIVE}}  
 **Optimization Event:** {{OPTIMIZATION_EVENT}} — {{plain-language explanation of what TikTok counts as a conversion for this campaign}}  
 **Budget:** {{DAILY or LIFETIME}} — {{AMOUNT}}  
 **Status:** {{Active / Learning / Paused}}
 
-#### Performance Summary
+##### Performance Summary
 
 > For CTR, CPC, and CPA rows, populate "Benchmark Range" with the percentile band the advertiser's value falls into: `>75th`, `50th–75th`, `25th–50th`, or `<25th`. This should match the Rating column.
 
 | Metric | Value | Benchmark Range | Rating |
 |--------|-------|-----------------|--------|
 | Spend | {{SPEND}} | — | — |
-| Impressions | {{IMPRESSIONS}} | — | — |
-| Clicks | {{CLICKS}} | — | — |
 | CTR | {{CTR}} | {{e.g. >75th}} | {{Amazing / Good / Fair / Poor}} |
 | CPC | {{CPC}} | {{e.g. 25th–50th}} | {{Amazing / Good / Fair / Poor}} |
 | Conversions | {{CONVERSIONS}} | — | — |
@@ -355,14 +350,14 @@ Translate all internal terminology to what advertisers see in TikTok Ads Manager
 > If this campaign is in learning phase (created within the last 7 days or fewer than 25 conversions), replace the table above with:
 > "⏳ **Learning Phase** — This campaign has fewer than 25 conversions or was created within the last 7 days. TikTok's algorithm is still optimizing delivery. Performance should not be evaluated against benchmarks yet. Avoid making edits during this phase as it resets the learning process."
 
-#### Ad Group Breakdown
+##### Ad Group Breakdown
 
 | Ad Group | Bid Strategy | Bid/Cap | Budget (Daily/Lifetime) | Targeting | Creatives | Spend | CPA | Status |
 |----------|-------------|---------|------------------------|-----------|-----------|-------|-----|--------|
 | {{AD_GROUP_NAME}} | {{Max Delivery / Cost Cap}} | {{AMOUNT or N/A}} | {{AMOUNT}} | {{Brief: e.g., "Broad, 18-44, US"}} | {{COUNT}} | {{SPEND}} | {{CPA}} | {{Active / Learning}} |
 {{...repeat for each ad group}}
 
-#### Bidding & Targeting Audit
+##### Bidding & Targeting Audit
 
 > Only include items that are relevant to this campaign's setup. Skip checks that don't apply (e.g., don't mention deep funnel events for a video view campaign, don't mention CBO if not using Maximum Delivery).
 
@@ -379,7 +374,7 @@ Translate all internal terminology to what advertisers see in TikTok Ads Manager
 - {{e.g., "Budget utilization is at 35% — the Cost Cap bid of $8 is likely too low. Raise to $10-12 or expand targeting to improve spend."}}
 
 
-#### Audience Insights
+##### Audience Insights
 
 **Top-performing segments** (by lowest CPA or highest conversion rate):
 
@@ -406,37 +401,37 @@ Translate all internal terminology to what advertisers see in TikTok Ads Manager
 
 ---
 
-## 5. Creative Analysis
+### 5. Creative Analysis
 
-### 5.1 Top-Spending Creatives
+#### 5.1 Top-Spending Creatives
 
 > Analyze the top 3 creatives by spend. For each, include the video analysis from the `tiktok-video-understanding` skill. If the skill is unavailable or the video cannot be retrieved, note this and provide general guidance covering hook quality, safe zone compliance, CTA clarity, audio usage, and UGC vs polished style based on available metadata.
 
-#### Creative #1: {{AD_NAME or VIDEO_ID}}
+##### Creative #1: {{AD_NAME or VIDEO_ID}}
 - **Spend:** {{SPEND}} | **Impressions:** {{IMPRESSIONS}} | **CTR:** {{CTR}} | **CPA:** {{CPA}}
 - **Video Analysis:**
   {{Paste or summarize video understanding output here — hook quality, safe zone compliance, pacing, CTA clarity, audio usage, visual quality.}}
 - **Verdict:** {{ 1 sentence — is this creative working well, What could be improved}}
 
-#### Creative #2: {{AD_NAME or VIDEO_ID}}
+##### Creative #2: {{AD_NAME or VIDEO_ID}}
 - **Spend:** {{SPEND}} | **Impressions:** {{IMPRESSIONS}} | **CTR:** {{CTR}} | **CPA:** {{CPA}}
 - **Video Analysis:**
   {{...}}
 - **Verdict:** {{...}}
 
-#### Creative #3: {{AD_NAME or VIDEO_ID}}
+##### Creative #3: {{AD_NAME or VIDEO_ID}}
 - **Spend:** {{SPEND}} | **Impressions:** {{IMPRESSIONS}} | **CTR:** {{CTR}} | **CPA:** {{CPA}}
 - **Video Analysis:**
   {{...}}
 - **Verdict:** {{...}}
 
-### 5.2 Creative Recommendations
+#### 5.2 Creative Recommendations
 
 {{2-4 specific recommendations based on creative analysis. Focus on patterns across creatives — e.g., all creatives lack a strong hook, none use text overlays, audio is underutilized, no UGC-style content, etc.}}
 
 ---
 
-## 6. Prioritized Action Plan
+### 6. Prioritized Action Plan
 
 > Consolidate all findings into a single ranked list of 5-10 next steps. Rank by expected impact (highest first). Each item should reference the section where it was identified.
 
@@ -451,9 +446,12 @@ Translate all internal terminology to what advertisers see in TikTok Ads Manager
 
 ---
 
-
 *Report generated by TikTok Ad Assistant.*
 
 #### Deliverables
-- `TIKTOK-ADS-REPORT.md` 
+1. **Generate Full Report first**
+  - TIKTOK-ADS-REPORT.md and save this file to the local directory.
 
+2. **Then generate Executive Summary Card**
+   - Extract the Executive Summary from the Full Report
+   - Save the Executive Summary to TIKTOK-ADS-EXECUTIVE-SUMMARY.md to the local directory.
