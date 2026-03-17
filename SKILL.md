@@ -6,10 +6,8 @@ description: >
   and audience performance. Benchmarks CTR, CPC, and CPA against TikTok
   regional norms, detects learning phase campaigns, audits top creatives, and
   produces a prioritized action plan with specific next steps per campaign. Use
-  whenever the user wants to audit, analyze, review, or diagnose a TikTok Ads
-  account — including phrases like "why aren't my ads performing", "my campaigns
-  aren't spending", "review my TikTok campaigns", "what's wrong with my ads",
-  "audit my TTAM account", or "how can I improve my TikTok Ads".
+  whene the user wants to perform a comprehensive audit, analysis, or review of a TikTok Ads
+  account — such as phrases like "audit my TTAM account".
 argument-hint: "tiktok-audit"
 ---
 
