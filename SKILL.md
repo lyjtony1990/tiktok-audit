@@ -63,7 +63,8 @@ Collect account and campaign setup information (not performance data yet):
    - Note: creative count per ad group, ad copy (if available), ad status
 
 
-5. **Audience Breakdown**: Analyze performance across all available dimensions:
+5. **Audience** Get audience data (try read `references/audience_insight_info.md`, or use https://business-api.tiktok.com/open_api/v1.3/audience/insight/info/ endpoint)
+  Audience Breakdown: Analyze performance across all available dimensions:
    - Age, gender, age + gender combined
    - Platform (iOS/Android)
    - Country, language
